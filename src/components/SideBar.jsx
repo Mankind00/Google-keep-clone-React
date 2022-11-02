@@ -1,9 +1,9 @@
 import React from "react";
+import Author from "./Author";
 import LightbulbOutlinedIcon from "@mui/icons-material/LightbulbOutlined";
 import ArchiveOutlinedIcon from "@mui/icons-material/ArchiveOutlined";
 import NotificationsNoneOutlinedIcon from "@mui/icons-material/NotificationsNoneOutlined";
 import DeleteOutlineOutlinedIcon from "@mui/icons-material/DeleteOutlineOutlined";
-const ulLinks = document.querySelector(".links");
 
 function SideBar(props) {
   console.log(props.showSidebar);
@@ -52,6 +52,7 @@ function SideBar(props) {
           </a>
         </li>
       </ul>
+      <Author />
     </aside>
   );
 }
