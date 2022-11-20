@@ -1,7 +1,7 @@
 import React, { useState } from "react";
+import GoogleKeepIcon from "../img/keep-icon.png";
 import HighlightIcon from "@mui/icons-material/Highlight";
 import MenuIcon from "@mui/icons-material/Menu";
-
 function Header(props) {
   const [sidebarIsExpand, setSidebar] = useState(false);
 
@@ -25,16 +25,19 @@ function Header(props) {
       <MenuIcon
         onClick={handleClick}
         className="sidebar-btn"
-        style={{ marginRight: "20px" }}
-      />
-      <HighlightIcon
         style={{
-          backgroundColor: "orange",
+          marginRight: "20px",
+          marginTop: "10px",
+        }}
+      />
+      <img
+        style={{
+          height: "45px",
           marginRight: "8px",
           paddingBottom: "5px",
-          fontSize: "30px",
-          borderRadius: "5px",
         }}
+        src={GoogleKeepIcon}
+        alt="Keeper logo"
       />
       <h1>Keep</h1>
     </header>

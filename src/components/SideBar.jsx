@@ -52,7 +52,7 @@ function SideBar(props) {
           </a>
         </li>
       </ul>
-      <Author />
+      {/* <Author /> */}
     </aside>
   );
 }
